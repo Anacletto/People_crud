@@ -1,12 +1,13 @@
-CREATE DATABASE peoplecrud
+CREATE DATABASE peoplecrud;
 
+USE  peoplecrud;
 CREATE TABLE user_data (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(50) NOT NULL,
-    sobrenome VARCHAR(50) NOT NULL,
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
     email VARCHAR(100) NOT NULL,
-    cargo VARCHAR(100) NOT NULL,
-    data_registo TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    job_title VARCHAR(100) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 DELIMITER //
